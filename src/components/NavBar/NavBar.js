@@ -11,25 +11,19 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <nav className='navbar navbar-expand-lg navbar-light'>
       <Link className="navbar-brand" to="/">
-        <h3>La Pelota No Se Mancha</h3>
+      <h3>La Pelota no<br></br>se Mancha (logo)</h3>
       </Link>
-      <button
-        className={`navbar-toggler ${isNavOpen ? 'collapsed' : ''}`}
-        type="button"
-        onClick={toggleNav}
-        aria-controls="navbarNav"
-        aria-expanded={isNavOpen ? 'true' : 'false'}
-        aria-label="Toggle navigation"
-      >
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div
         className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`}
         id="navbarNav"
       >
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto navbarmiddle">
           <li className="nav-item">
             <NavLink
               className="nav-link"
@@ -37,7 +31,7 @@ const NavBar = () => {
               to="/category/Mundiales"
               onClick={toggleNav}
             >
-              Mundiales
+              <h4>Mundiales</h4>
             </NavLink>
           </li>
           <li className="nav-item">
@@ -47,7 +41,7 @@ const NavBar = () => {
               to="/category/Copa Libertadores"
               onClick={toggleNav}
             >
-              Copa Libertadores
+              <h4>Copa Libertadores</h4>
             </NavLink>
           </li>
           <li className="nav-item">
@@ -57,12 +51,12 @@ const NavBar = () => {
               to="/category/Champions League"
               onClick={toggleNav}
             >
-              Champions League
+              <h4>Champions League</h4>
             </NavLink>
           </li>
         </ul>
       </div>
-      <CartWidget />
+      <CartWidget className='cartWidget'/>
     </nav>
   );
 };

@@ -3,11 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js'
-import background from './images/FondoCancha1.jpeg'
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})` }} >
+    <div className="App">
 
       <BrowserRouter>
         <NavBar /> 

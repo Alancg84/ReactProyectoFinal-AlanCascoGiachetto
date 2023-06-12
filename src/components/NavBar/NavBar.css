@@ -1,3 +1,21 @@
+.navbar{
+  background-color: rgba(255, 255, 255, 0.500);
+  padding: /*arriba*/0% /*derecha*/ 5%/*abajo*/0% /*izquierda*/5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbarNav{
+  display: flex;
+  justify-content: center;
+}
+
+.navbarmiddle{
+  justify-content: space-evenly;
+  flex-grow: 0.5;
+}
+
 .navbar-bottom {
   position: fixed;
   bottom: 0;
@@ -6,8 +24,11 @@
   padding: 10px;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   z-index: 100;
-  background-color: skyblue;
 }
+
+
+
+
 
 @media (min-width: 992px) {
   .navbar-bottom {

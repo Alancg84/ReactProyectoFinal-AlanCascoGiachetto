@@ -1,8 +1,11 @@
 .Controls{
     display: flex;
-    justify-content: space-evenly;
-    background-color: red;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 1%;
+}
 
-
+.AddToChartButton{
+    padding: 1%;
 }
 

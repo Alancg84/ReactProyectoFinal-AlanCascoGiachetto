@@ -1,21 +1,21 @@
 const products = [
     {
-        id: "1", name: "Pelota Adidas AL RIHLA", price: 100, category: "Mundiales", img:"/images/pelota.png" , stock: 5, description: "Pelota 1"
+        id: "1", name: "Pelota Adidas AL RIHLA", price: 100, category: "Mundiales", img:"/images/pelota.png" , stock: 5, description: "Mundial Qatar 2022"
     },
     {
-        id: "2", name: "Pelota 2", price: 100, category: "Mundiales", img: "/images/pelota.png", stock: 5, description: "Pelota 2"
+        id: "2", name: "Pelota Adidas TELSTAR", price: 100, category: "Mundiales", img: "/images/Telstar18.jpg", stock: 5, description: "Mundial Rusia 2018"
     },
     {
-        id: "3", name: "Pelota 3", price: 100, category: "Copa Libertadores", img: "/images/pelota.png", stock: 5, description: "Pelota 3"
+        id: "3", name: "Pelota Nike FLIGHT CSF 23", price: 100, category: "Copa Libertadores", img: "/images/Libertadores23.jpeg", stock: 5, description: "Copa Libertadores 23 Match"
     },
     {
-        id: "4", name: "Pelota 4", price: 100, category: "Copa Libertadores", img: "/images/pelota.png", stock: 5, description: "Pelota 4"
+        id: "4", name: "Pelota Nike FLIGHT CSF 22", price: 100, category: "Copa Libertadores", img: "/images/Libertadores22.jpg", stock: 5, description: "Copa Libertadores 22 Match"
     },
     {
-        id: "5", name: "Pelota 5", price: 100, category: "Champions League", img: "/images/pelota.png", stock: 5, description: "Pelota 5"
+        id: "5", name: "Pelota Adidas FINALE UCL 23", price: 100, category: "Champions League", img: "/images/champions23F.jpeg", stock: 5, description: "Final UCL 23"
     },
     {
-        id: "6", name: "Pelota 6", price: 100, category: "Champions League", img: "/images/pelota.png", stock: 5, description: "Pelota 6"
+        id: "6", name: "Pelota Adidas FINALE UCL 22", price: 100, category: "Champions League", img: "/images/champions22F.jpg", stock: 5, description: "Final UCL 22"
     }
 ]
 

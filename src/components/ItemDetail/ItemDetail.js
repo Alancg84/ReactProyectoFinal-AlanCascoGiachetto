@@ -8,7 +8,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                 <img src={img} className='ItemImg' alt ={name}/>
             </picture>
             <header className='Header'>
-                <h2 className='ItemHeader'>{name}</h2>
+                <h3 className='ItemHeader'>{name}</h3>
             </header>
             <section>
                 <p className='Info'>
