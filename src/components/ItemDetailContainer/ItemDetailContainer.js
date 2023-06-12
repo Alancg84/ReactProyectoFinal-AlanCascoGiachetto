@@ -21,6 +21,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div className='ItemDetailContainer' >
+            <h1>ItemDetailContainer que muestra la pantalla una vez que entras al producto</h1>
             <ItemDetail {...product} />
         </div>
     )

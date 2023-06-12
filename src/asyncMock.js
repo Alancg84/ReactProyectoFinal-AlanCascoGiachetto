@@ -1,6 +1,6 @@
 const products = [
     {
-        id: "1", name: "Pelota 1", price: 100, category: "Mundiales", img:"/images/pelota.png" , stock: 5, description: "Pelota 1"
+        id: "1", name: "Pelota Adidas AL RIHLA", price: 100, category: "Mundiales", img:"/images/pelota.png" , stock: 5, description: "Pelota 1"
     },
     {
         id: "2", name: "Pelota 2", price: 100, category: "Mundiales", img: "/images/pelota.png", stock: 5, description: "Pelota 2"

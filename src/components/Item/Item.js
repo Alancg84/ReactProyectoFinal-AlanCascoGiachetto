@@ -5,22 +5,25 @@ const Item = ({id, name, img, price, stock}) => {
 
     return (
         <article className='CardItem'>
-            <header className='Header'>
-                <h2 className='ItemHeader'>{name}</h2>
-            </header>
+            
             <picture>
-                <img src={img} alt ={name} className="ItemImg"/>
+                <img src={img} alt ={name} className="ItemImg card-img-top"/>
             </picture>
-            <section>
+            <section className='section'>
                 <p className='Info'>
-                    Precio: {price}
+                    <h3>{name}</h3>
                 </p>
-                <p className='Info'>
-                    Stock Disponible: {stock}
-                </p>
+                        <p className='Info'>
+                            Precio: $ {price}
+                        </p>
+                        <p className='Info'>
+                            Stock Disponible: {stock}
+                        </p>
             </section>
             <footer className='ItemFooter'>
-                <Link to={`/item/${id}`} className='Option'>Ver Detalle</Link>
+                <div className='FooterItem'>
+                <Link to={`/item/${id}`} className='Option btn btn-primary'>Ver Detalle</Link>
+                </div>
             </footer>
         </article>
     )

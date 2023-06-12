@@ -24,7 +24,7 @@ const ItemListContainer = ( { greeting } ) => {
 
     return (
 
-        <div>
+        <div className="Cardkey">
             <h1>{greeting}</h1>
             <ItemList products={products}/>
         </div>
@@ -35,15 +35,3 @@ const ItemListContainer = ( { greeting } ) => {
 
 export default ItemListContainer
 
-    // useEffect (() => {
-    //     getProducts()
-        
-    //     .then(response => {
-    //         setProducts(response)
-    //     })
-
-    //     .catch(error => {
-    //         console.error(error)
-    //     })
-
-    // }, [])

@@ -1,8 +1,18 @@
-.ListGroup {
-    margin: 50px;
-    padding: 50px;
-    background-color: lightgrey;
+.ListGroup{
+    width: 80%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 10%, 10%, 10%, 10%;
+}
+
+.ListGroup > *{
+    flex-basis: 35%;
+    margin: 500px;
+}
+
+.ListGroupDad{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
 }

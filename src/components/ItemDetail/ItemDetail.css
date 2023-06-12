@@ -1,8 +1,13 @@
-.CardItem {
-    background-color: aqua;
+.CardItem{ /*lo que esta dentro de las Cards*/
+    background-color: rgb(93, 93, 95);
+    margin: 10px;    
+    border-radius: 30px;
+    width: 25%;
 }
 
 .ItemImg{
-    width: 80%;
-    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }

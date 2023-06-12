@@ -1,0 +1,22 @@
+.section{
+    box-sizing: border-box;
+}
+
+.ItemImg{
+    border-radius: 10px;
+}
+
+.FooterItem{
+    
+    margin-bottom: 10%;
+}
+
+.CardItem{
+    width: 350px;
+    margin: 1rem;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.80);
+}
