@@ -7,7 +7,7 @@ import './Cart.css'
 const Cart = () => {
     const { cart, clearCart, totalQuantity, total } = useContext(CartContext)
 
-    if(totalQuantity === 0) {
+    if(cart.length === 0) {
         return (
             <div>
                 <h1>No hay items en el carrito</h1>

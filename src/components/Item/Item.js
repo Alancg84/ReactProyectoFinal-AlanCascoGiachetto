@@ -4,8 +4,7 @@ import './Item.css'
 const Item = ({id, name, img, price, stock}) => {
 
     return (
-        <article className='CardItem'>
-            
+        <article className='CardItem'>            
             <picture>
                 <img src={img} alt ={name} className="ItemImg card-img-top"/>
             </picture>

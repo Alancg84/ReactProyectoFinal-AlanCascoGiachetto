@@ -1,0 +1,9 @@
+.CartItemContainer{
+    display: grid;
+    place-items: center;
+}
+
+.CardItem{
+    display: grid;
+    place-items: center;
+}
