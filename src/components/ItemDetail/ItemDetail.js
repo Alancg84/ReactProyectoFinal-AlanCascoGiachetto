@@ -14,7 +14,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, name, price,
+            id, name, img, category, description, price, stock
         };
 
         addItem (item, quantity)

@@ -1,22 +1,27 @@
 import React from 'react'
+import './CartItem.css'
 
 
-const CartItem = ({id, name, img, price, stock, category}, props) => {
-    console.log(props)
+const CartItem = ({ id, name, img, price, stock, category }, props) => {
+    console.log(props);
   return (
-    <div>
-        <article className='CardItem'>
-            <picture>
-                <img src={img} alt ={name} className="ItemImg card-img-top"/>
+    <div className='container'>
+        <article className='CardItem card mb-2'>
+            <div class="row g-0">
+            <picture class="col-md-4">
+                <img src={img} alt ={name} className="ItemImg img-fluid rounded-start"/>
             </picture>
-            <section className='section'>
+            <section className='col-md-8'>
+            <div class="Card-body">
                 <p className='Info'>
                     <h3>{name}</h3>
                 </p>
                 <p className='Info'>
                 Precio: $ {price}
-                </p>                        
+                </p>   
+                </div>                         
             </section>
+            </div>
         </article>
     </div>
   )

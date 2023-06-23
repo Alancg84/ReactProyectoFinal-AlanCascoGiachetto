@@ -1,10 +1,13 @@
-.CartItemContainer{
-    background-color: blue;
-    display: grid;
-    place-items: center;
+.container{
+    display: flex;
+    justify-content: center;
 }
 
 .CardItem{
-    display: grid;
-    place-items: center;
+    max-width: 540px;
+}
+
+.Card-body{
+    display: flex;
+    justify-content: center;
 }
