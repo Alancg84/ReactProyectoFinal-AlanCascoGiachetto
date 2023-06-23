@@ -1,5 +1,7 @@
 import React from 'react'
 import './CartItem.css'
+import '../ItemCount/ItemCount'
+import { useContext, useState } from 'react'
 
 const CartItem = ({id, name, img, price, stock}) => {
     
@@ -16,7 +18,17 @@ const CartItem = ({id, name, img, price, stock}) => {
                     <p className='Info'>
                         Precio: $ {price}
                     </p>
-                </section>            
+                </section>
+                <footer className='ItemFooter'>
+                {
+                    quantityAdded > 0 ? (
+                        <Link to='/cart' className='Option' > Terminar compra</Link>
+                    ) : (
+                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                    )
+                }
+
+            </footer>            
             </article>
         </div>
     )

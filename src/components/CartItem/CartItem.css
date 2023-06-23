@@ -1,4 +1,5 @@
 .CartItemContainer{
+    background-color: blue;
     display: grid;
     place-items: center;
 }
