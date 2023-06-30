@@ -6,14 +6,12 @@
 
 
 .CartCardItem{
-    background-color: blue;
     width: 960px;
     height: min-content;
     
 }
 
 .col-md-4{
-    background-color: brown;
     display: flex;
     justify-content: center;
     align-items: center;
