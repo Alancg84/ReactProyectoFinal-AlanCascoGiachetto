@@ -6,10 +6,10 @@ const CartItem = ({ id, name, img, price, stock, category }, props) => {
     console.log(props);
   return (
     <div className='container'>
-        <article className='CardItem card mb-2'>
+        <article className='CardItem card mb-2 CartCardItem'>
             <div class="row g-0">
             <picture class="col-md-4">
-                <img src={img} alt ={name} className="ItemImg img-fluid rounded-start"/>
+                <img src={img} alt ={name} className="CartItemImg img-fluid rounded-start"/>
             </picture>
             <section className='col-md-8'>
             <div class="Card-body">
