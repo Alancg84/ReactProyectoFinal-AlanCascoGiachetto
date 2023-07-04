@@ -1,10 +1,16 @@
-import React from 'react'
-import './CartItem.css'
+import React, {useContext} from 'react';
+import './CartItem.css';
 import { CartContext } from '../../context/CartContext';
 
 
+
 const CartItem = ({ id, name, img, price, stock, category }, props) => {
+    const { cart } = useContext(CartContext);
+    const cartItem = cart.find(item => item.id === id);
+    const totalItem = cartItem ? cartItem.quantity * price : 0;
+
     console.log(props);
+
   return (
     <div className='container'>
         <article className='CardItem card mb-2 CartCardItem'>
@@ -21,8 +27,11 @@ const CartItem = ({ id, name, img, price, stock, category }, props) => {
                 Precio: $ {price}
                 </p>
                 <p className='Info'>
-                Cantidad: $ {quantity}
-                </p>      
+                Cantidad: {cartItem ? cartItem.quantity : 0}
+                </p>
+                <p className='Info'>
+                Total: $ {totalItem}
+                </p>   
                 </div>                         
             </section>
             </div>
