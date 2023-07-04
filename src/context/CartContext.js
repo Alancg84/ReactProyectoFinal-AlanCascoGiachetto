@@ -1,11 +1,11 @@
 import { createContext, useState } from "react"
 
 export const CartContext = createContext({
-    cart: []
+    cart: [quantity]
 })
 
 export const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([quantity])
 
     console.log(cart)
 

@@ -1,3 +1,8 @@
+.CartCardItem{
+    width: 100%;
+    
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -5,28 +10,8 @@
 }
 
 
-.CartCardItem{
-    width: 960px;
-    height: min-content;
-    
-}
-
-.col-md-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-}
-
 .CartItemImg{
-    width: 65%;
-    
+    width: 80%; 
+    border-radius: 20%;  
 
-}
-
-.Card-body{
-    padding: 10px, 10px, 10px, 10px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
 }
