@@ -3,6 +3,7 @@ import { CartContext } from '../../context/CartContext';
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import {collection, addDoc} from 'firebase/firestore';
 import {db} from '../../services/firebase/firebaseConfig';
+import './Checkout.css'
 
 const Checkout = () => {
 
@@ -13,20 +14,43 @@ const Checkout = () => {
         const order = {
             buyer: userData,
             products: cart,
-            total: total(),
+            total: total
         }
         console.log(order)
 
         const pedidosRef = collection(db, "orders");
 
+        if(userData && cart && total) {
+            console.log('userData:', userData);
+            console.log('cart:', cart);
+            console.log('total:', total); //Estoy probando si algun o de los datos viajan vacios//
+
+
         addDoc(pedidosRef, order)
         .then((doc) => {
             setOrderId(doc.id);
+            console.log(doc.id); // pruebo si me llega la ID de pedido//
             clearCart()
         })
         .catch((error) =>{
             console.error('Error adding document: ', error)
         })
+
+        }else{
+        console.log('error: missing data')
+        }
+
+        
+    }
+
+    if (orderId) {
+        return(
+            <div className="container CardItem">
+            <h1 className="main-title">Muchas gracias por tu compra!</h1>
+            <p>Tu numero de pedido es: {orderId}</p>
+            </div>
+        )
+
     }
 
     return (
