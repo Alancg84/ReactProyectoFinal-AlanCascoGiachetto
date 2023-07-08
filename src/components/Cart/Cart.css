@@ -1,4 +1,11 @@
 .btnCartContainer{
+    display: grid;
+    margin: 15px;
+}
+
+.btnCartContainer1{
+    margin: 15px;
     display: flex;
     justify-content: space-evenly;
 }
+

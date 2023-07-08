@@ -3,6 +3,7 @@ import { CartContext } from '../../context/CartContext';
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import {collection, addDoc} from 'firebase/firestore';
 import {db} from '../../services/firebase/firebaseConfig';
+import { Link } from "react-router-dom";
 import './Checkout.css'
 
 const Checkout = () => {
@@ -45,9 +46,10 @@ const Checkout = () => {
 
     if (orderId) {
         return(
-            <div className="container CardItem">
+            <div className="container CardItem checkoucontainer">
             <h1 className="main-title">Muchas gracias por tu compra!</h1>
             <p>Tu numero de pedido es: {orderId}</p>
+            <Link to='/' className="Button btn btn-primary">Volver a productos</Link>
             </div>
         )
 
@@ -57,6 +59,7 @@ const Checkout = () => {
         <div className="Container">
             <h1>FINALIZAR COMPRA</h1>
             <CheckoutForm onConfirm={handleConfirm} />
+            <Link to='/cart' className="Button btn btn-primary">Volver al carrito</Link>
         </div>
     )
 }

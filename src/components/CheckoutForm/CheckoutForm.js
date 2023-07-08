@@ -19,7 +19,7 @@ const CheckoutForm = ({ onConfirm }) => {
     }
 
     return(
-        <div className='Container'>
+        <div className='Container CardItem'>
             <form onSubmit={handleConfirm} className='Form'>
                 <label className='Label'>
                     Nombre
@@ -28,7 +28,7 @@ const CheckoutForm = ({ onConfirm }) => {
                     <input className='Input' type='text' value = {email} onChange={({ target }) => setEmail(target.value)}/>
                 </label>
                 <div className='Label'>
-                    <button type='submit' className='Button'>Crear Orden</button>
+                    <button type='submit' className='Button btn btn-primary'>Crear Orden</button>
                 </div>
             </form>
         </div>
